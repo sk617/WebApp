@@ -6,7 +6,7 @@ metadata:
      app: webapp
 
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: webapp
@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: webapp
-        image: webapp:${IMAGE_VERSION}
+        image: webapp-image:${IMAGE_VERSION}
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
