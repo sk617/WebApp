@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: webapp
-        image: webapp-image:${IMAGE_VERSION}
+        image: koushiksaha/webapp-image:${IMAGE_VERSION}
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
